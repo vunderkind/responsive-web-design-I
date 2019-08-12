@@ -29,13 +29,23 @@ header {
     }
 }
 
+@media only screen and (max-width:900px) {
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+    }
+}
+
 .navBar {
     display:flex;
     align-items: left;
     justify-content:left;
     margin-top: 2% 0px;
     flex-wrap: wrap;
-    width: 90%;
+    width: 80%;
 }
 
 @media only screen and (max-width: 500px) {
@@ -47,11 +57,21 @@ header {
  }   
 }
 
+@media only screen and (max-width: 900px) {
+    .navBar {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10% 0;
+        width: 100%;
+    }   
+   }
+
 .logo {
     display:flex;
+    flex-direction: row;
     margin-top: 1%;
     width: 10%;
-    align-self: center;
+    align-self: auto;
     
 }
 
@@ -61,7 +81,15 @@ header {
     border-bottom: 1px solid black;
     width: 100%;
     padding-bottom: 3%;
+    }
 }
+
+@media only screen and (max-width:900px) {
+    .logo {
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 3%;
+    }
 }
 
 a {
@@ -92,6 +120,12 @@ a:hover {
         padding-bottom: 2%;
         border-bottom: 1px solid black;
         width: 100%;
+    } 
+}
+
+@media only screen and (max-width: 900px) {
+    .navSpace {
+        font-size: 0.8em;
     } 
 }
 
@@ -159,6 +193,7 @@ width: 40%;
                 width: 100%;
             }
         }
+
         
     h1 {
     font-family: 'Bangers';
@@ -173,6 +208,16 @@ width: 40%;
 @media only screen and (max-width:900px) {
     h1 {
         font-size: 3em;
+    }
+
+    .jumbotron.right {
+        display: none;
+    }
+    .jumbotron.left {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-top: 2%;
     }
 }
 
@@ -190,6 +235,13 @@ width: 40%;
 }
 
 @media only screen and (max-width:500px) {
+    #button {
+        font-size: 1.2em;
+        margin-top: 3%;
+    }
+}
+
+@media only screen and (max-width:900px) {
     #button {
         font-size: 1.2em;
         margin-top: 3%;
@@ -267,6 +319,12 @@ padding: 0 20px;
 
 @media only screen and (max-width:500px) {
     .middle {padding: 0;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    p {
+        font-size: 0.7em;
     }
 }
 
