@@ -1,0 +1,241 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:60%;
+    margin: 0 auto;
+}
+.navBar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content:center;
+    margin: 2% 0px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+a {
+    color: #049BBF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #01CB9C;
+}
+.navSpace {
+    display: flex;
+    align-items: center;
+    justify-content: space;
+    align-content: center;
+    margin: 2% auto;
+    padding: 1%;
+    font-family: 'Titillium Web';
+    font-size: 1.2vw;
+    color: gray;
+}
+
+.navSpace:hover {
+    color:red;
+}
+
+.navSpace.product {
+    color:black;
+}
+
+
+
+.navSpace.product:hover {
+    color: #C457D8
+}
+
+.logo {
+    display:flex;
+    margin-top: 1%;
+    width: 13vw;
+    
+}
+
+.logo.product {
+    padding: 10%;
+    width: 50%;
+}
+.logo:hover {
+    opacity: 0.5;
+}
+
+.jumbotron {
+    display: flex;
+    width: 100%;
+    padding-top:5%;
+    padding-bottom: 5%;
+}
+
+.jumbotron.right {
+display: flex;
+flex-direction: column;
+justify-content: right;
+align-items: right;
+margin: 0px 0px 0px 10%;
+width: 40%;
+}
+
+.jumbotron.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 0px 10% 0px 0px;
+    }
+h1 {
+    font-family: 'Bangers';
+    font-size: 5vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 0px;
+    justify-content: center;
+}
+
+#button{
+    display:flex;
+    font-family: 'Titillium Web';
+    font-size: 1.3vw;
+    border: 1px solid black;
+    padding: 0px 3%;
+    border-radius: 4px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+p, footer, address  {
+    display:flex;
+    font-family: 'Titillium Web';
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+ul {
+    font-family: 'Titillium Web';
+    font-size: 14px;
+}
+
+hr {
+    display:flex;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.fabout {
+    display: flex;
+}
+
+.fleft {
+    padding: 0px 20px 0px 1px;
+}
+h2 {
+font-family: 'Bangers';
+font-size: 20px;
+text-align: left;
+}
+
+h2.product {
+    font-family: 'Righteous';
+}
+
+.middle-img {
+    display:flex;
+    width: 100%;
+}
+
+.bottom-rung {
+    display: flex;
+    padding: 20px 0px;
+}
+
+.middle {
+padding: 0 20px;
+}
+
+.contact {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction:column;
+    width: 100%;
+
+}
+
+.service-img {
+    padding: 20px;
+    width: 100%;
+}
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+}
+.main {
+    display:flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 2%;
+    margin: 2%;
+    background-color: #F4F3F4;
+    width: 40%;
+    justify-content: space-between;
+    align-items: left;
+    align-content: space-between;
+}
+
+.button{
+    display:flex;
+    font-family: 'Titillium Web';
+    border: 1px solid black;
+    padding: 1%;
+    border-radius: 4px;
+    width: 25%;
+    text-align: center;
+    background-color: white;
+}
+
+.baseline {
+    display: flex;
+    padding: 1%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.glasses {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+#left {
+    width: 50%;
+    margin: 0px 1%0px 0px;
+    padding: 5%;
+
+}
+
+#right {
+    width: 50%;
+    margin: 0px 0px 0px 1%;
+}
+
+@media only screen and (max-width: 800px) {
+    .main, .baseline {
+      background-color: lightblue;
+      width: 100%;
+    }
+    #container {
+        width: 100%;
+    }
+  }
+
+  
