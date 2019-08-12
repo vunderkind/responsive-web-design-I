@@ -345,6 +345,8 @@ padding: 0 20px;
     display: flex;
     flex-wrap: wrap;
 }
+
+
 .main {
     display:flex;
     flex-direction: column;
@@ -364,9 +366,23 @@ padding: 0 20px;
     border: 1px solid black;
     padding: 1%;
     border-radius: 4px;
-    width: 25%;
+    width: 80px;
     text-align: center;
     background-color: white;
+}
+
+@media only screen and (max-width:900px) {
+    .main.design {
+    display: flex;
+    width: 100%;
+    background: rgb(238, 221, 238);
+    justify-content: center;
+    align-items: center;
+    }
+
+    .button {
+        width: auto;
+    }
 }
 
 .baseline {
@@ -376,22 +392,42 @@ padding: 0 20px;
     flex-wrap: wrap;
 }
 
-.glasses {
-    position: relative;
-    width: 100%;
-    display: flex;
-}
 
 #left {
-    width: 50%;
+    width: 40%;
     margin: 0px 1%0px 0px;
     padding: 5%;
 
 }
 
-#right {
-    width: 50%;
-    margin: 0px 0px 0px 1%;
+.glasses {
+    align-self: center;
+    width: 100%;
 }
 
+#right {
+    width: 40%;
+    margin: 0px 0px 0px 1%;
+    align-self: center;
+}
+
+@media only screen and (max-width:900px) {
+    .baseline {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #left, #right {
+        width: 100%;
+        text-align: justify;
+        margin: 0;
+        padding: 0;
+    }
+
+    .glasses {
+        align-self: center;
+        width: 100%;
+    }
+}
 
