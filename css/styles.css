@@ -1,0 +1,433 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:60%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 500px) {
+    #container {
+        width: 90%;
+    } 
+}
+header {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    width: 100%;
+}
+
+@media only screen and (max-width:500px) {
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+    }
+}
+
+.navBar {
+    display:flex;
+    align-items: left;
+    justify-content:left;
+    margin-top: 2% 0px;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+@media only screen and (max-width: 500px) {
+ .navBar {
+     display: flex;
+     flex-direction: row;
+     margin-top: 10% 0;
+     width: 100%;
+ }   
+}
+
+@media only screen and (max-width: 900px) {
+    .navBar {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10% 0;
+        width: 100%;
+    }   
+   }
+
+.logo {
+    display:flex;
+    flex-direction: row;
+    margin-top: 1%;
+    width: 10%;
+    align-self: auto;
+    
+}
+
+@media only screen and (max-width:500px) {
+    .logo {
+    justify-content: center;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding-bottom: 3%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .logo {
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 3%;
+    }
+}
+
+a {
+    color: #049BBF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #01CB9C;
+}
+.navSpace {
+    display: flex;
+    align-items: center;
+    justify-content: space;
+    align-content: center;
+    margin: 2% auto;
+    padding: 1%;
+    font-family: 'Titillium Web';
+    font-size: 1.2vw;
+    color: gray;
+}
+
+@media only screen and (max-width: 500px) {
+    .navSpace {
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: 1em;
+        padding-bottom: 2%;
+        border-bottom: 1px solid black;
+        width: 100%;
+    } 
+}
+
+@media only screen and (max-width: 900px) {
+    .navSpace {
+        font-size: 0.8em;
+    } 
+}
+
+.navSpace:hover {
+    color:red;
+}
+
+.navSpace.product {
+    color:black;
+}
+
+
+
+.navSpace.product:hover {
+    color: #C457D8
+}
+
+
+.logo.product {
+    padding: 10%;
+    width: 50%;
+}
+.logo:hover {
+    opacity: 0.5;
+}
+
+.jumbotron {
+    display: flex;
+    width: 100%;
+    padding-top:5%;
+    padding-bottom: 5%;
+}
+
+.jumbotron.right {
+display: flex;
+flex-direction: column;
+justify-content: right;
+align-items: right;
+margin: 0px 0px 0px 10%;
+width: 40%;
+}
+
+
+.jumbotron.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 0px 10% 0px 0px;
+    }
+
+    @media only screen and (max-width:500px) {
+
+        .jumbotron {
+            display: flex;
+            flex-direction: column;
+        }
+        
+            .jumbotron.right {
+                display: none;
+            }
+        
+            .jumbotron.left {
+                width: 100%;
+            }
+        }
+
+        
+    h1 {
+    font-family: 'Bangers';
+    font-size: 5vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 0px;
+    justify-content: center;
+}
+
+@media only screen and (max-width:900px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    .jumbotron.right {
+        display: none;
+    }
+    .jumbotron.left {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-top: 2%;
+    }
+}
+
+#button{
+    display:flex;
+    font-family: 'Titillium Web';
+    font-size: 1.3vw;
+    border: 1px solid black;
+    padding: 0px 3%;
+    border-radius: 4px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+@media only screen and (max-width:500px) {
+    #button {
+        font-size: 1.2em;
+        margin-top: 3%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    #button {
+        font-size: 1.2em;
+        margin-top: 3%;
+    }
+}
+
+p, address  {
+    display:flex;
+    font-family: 'Titillium Web';
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+footer {
+    margin-top: 10%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+ul {
+    font-family: 'Titillium Web';
+    font-size: 14px;
+}
+
+hr {
+    display:flex;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.fabout {
+    display: flex;
+}
+
+@media only screen and (max-width:500px) {
+    .fabout {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.fleft {
+    padding: 0px 20px 0px 1px;
+}
+h2 {
+font-family: 'Bangers';
+font-size: 20px;
+text-align: left;
+margin: 0;
+}
+
+h2.product {
+    font-family: 'Righteous';
+}
+
+.middle-img {
+    display:flex;
+    width: 100%;
+}
+
+.bottom-rung {
+    display: flex;
+    padding: 20px 0px;
+}
+
+@media only screen and (max-width:500px) {
+    .bottom-rung {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.middle {
+padding: 0 20px;
+}
+
+@media only screen and (max-width:500px) {
+    .middle {padding: 0;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    p {
+        font-size: 0.7em;
+    }
+}
+
+.contact {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction:column;
+    width: 100%;
+
+}
+
+.service-img {
+    padding: 20px;
+    width: 100%;
+}
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.main {
+    display:flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 2%;
+    margin: 2%;
+    background-color: #F4F3F4;
+    width: 40%;
+    justify-content: space-between;
+    align-items: left;
+    align-content: space-between;
+}
+
+.button{
+    display:flex;
+    font-family: 'Titillium Web';
+    border: 1px solid black;
+    padding: 1%;
+    border-radius: 4px;
+    width: 80px;
+    text-align: center;
+    background-color: white;
+}
+
+@media only screen and (max-width:900px) {
+    .main.design {
+    display: flex;
+    width: 100%;
+    background: rgb(238, 221, 238);
+    justify-content: center;
+    align-items: center;
+    }
+
+    .button {
+        width: auto;
+    }
+}
+
+.baseline {
+    display: flex;
+    padding: 1%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+#left {
+    width: 40%;
+    margin: 0px 1%0px 0px;
+    padding: 5%;
+
+}
+
+.glasses {
+    align-self: center;
+    width: 100%;
+}
+
+#right {
+    width: 40%;
+    margin: 0px 0px 0px 1%;
+    align-self: center;
+}
+
+@media only screen and (max-width:900px) {
+    .baseline {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #left, #right {
+        width: 100%;
+        text-align: justify;
+        margin: 0;
+        padding: 0;
+    }
+
+    .glasses {
+        align-self: center;
+        width: 100%;
+    }
+}
+
